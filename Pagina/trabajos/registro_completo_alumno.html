@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Completado</title>
+    <link rel="stylesheet" href="CSS/registro_comple.css">
+    <script>
+        // Función que redirige a la página deseada después de 5 segundos
+        function redirigir() {
+            setTimeout(function() {
+                window.location.href = 'sesion_Alumno.php'; // Cambia 'pagina_siguiente.html' por la página de destino
+            }, 3000); // 5000 milisegundos = 5 segundos
+        }
+    </script>
+</head>
+<body onload="redirigir()"> <!-- Ejecutar la redirección al cargar la página -->
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <img src="imagenes/logo_krause.png" alt="Escuela Técnica Otto Krause" class="logo-img">
+                <h3>Escuela Técnica<br>OTTO KRAUSE</h3>
+            </div>
+            <div class="registro">
+                <div class="libreta">
+                    <div class="papel"></div> <!-- Papel que se animará -->
+                    <div class="frente"></div>
+                </div>
+                <h2>REGISTRO DE ASISTENCIA</h2>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>REGISTRO COMPLETADO</h2>
+        </div>
+    </div>
+</body>
+</html>

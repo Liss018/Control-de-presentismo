@@ -1,0 +1,395 @@
+
+/* Estilos para el botón Volver */
+.volver-boton {
+    position: absolute;
+    right: 20px; /* Posiciona el botón a la derecha del header */
+    top: 95px;
+    padding: 10px 20px;
+    background-color: #910505;
+    color: white;
+    border: 2px solid #8b0a0a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-boton:hover {
+    background-color: black;
+    color: #fff;
+}
+.contenedor{
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 70px auto 20px auto;
+    text-align: center;
+}
+table thead{
+    background-color: white;
+    font-size: 20px
+}
+table tbody{
+    background-color: white;
+    font-size: 18px;
+}
+td{
+    padding: 10px;
+}
+td input{
+    transform: scale(2.3);
+}
+table tbody tr:hover{
+  background-color: rgb(168, 90, 90);
+  cursor: pointer;
+}
+.contenedor  #guardarPresencia{
+   border-radius: 20px;
+   border: none;
+   background-color: rgb(255, 102, 0);
+   padding: 15px;
+   width: 80%;
+   cursor: pointer;
+}
+/* Pie de página */
+footer {
+    background-color: #8b0a0a;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 10px;
+    margin-right: 5px;
+}
+.footer-logo {
+    width: 35px;
+    height: 35px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+h3{
+    font-size: 20px;
+}
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #ddd;
+}
+
+.icon-twitter {
+    width: 45px;
+    height: 40px;
+}
+
+.icon-facebook {
+    width: 40px;
+    height: 40px;
+}
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Activar scroll si es necesario */
+    background-color: rgb(0,0,0); /* Fondo negro */
+    background-color: rgba(0,0,0,0.4); /* Fondo negro con transparencia */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    resize: none; /* No permitir cambiar el tamaño */
+}
+
+
+/* Estilos para el modal */
+#editModal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la ventana */
+    z-index: 1000; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+/* Contenedor del contenido del modal */
+#editModal form {
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar el centrado */
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 300px; /* Ancho del modal */
+}
+
+/* Estilos para las etiquetas */
+#editModal label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 8px; /* Espaciado inferior */
+}
+
+/* Estilos para los campos de entrada */
+#editModal input[type="text"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+}
+
+/* Estilos para los botones */
+#editModal button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    margin-right: 10px; /* Espaciado a la derecha */
+}
+
+/* Cambiar color de fondo del botón al pasar el ratón */
+#editModal button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+   /* Estilos para la ventana emergente */
+   #ventanaEmergente {
+    display: none; /* Se oculta por defecto */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilos para el contenedor de la ventana */
+#ventanaEmergente > div {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; /* Ancho fijo para la ventana */
+    text-align: center; /* Centra el texto y los elementos dentro */
+}
+
+/* Estilos para el título */
+#ventanaEmergente h3 {
+    margin-bottom: 15px; /* Espaciado entre el título y los botones */
+    font-size: 18px; /* Tamaño del texto del título */
+}
+
+/* Estilos para el input */
+#codigoInput {
+    width: 100%; /* Ancho completo dentro de la ventana */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado debajo del input */
+    border: 1px solid #ccc; /* Bordes suaves */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 15px; /* Espaciado interno para los botones */
+    margin: 5px; /* Espaciado entre botones */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el botón de cancelar */
+button:nth-child(3) {
+    background-color: #f44336; /* Color de fondo rojo para el botón cancelar */
+}
+
+button:nth-child(3):hover {
+    background-color: #e53935; /* Color más oscuro al pasar el ratón */
+}
+/* Estilo para el modal */
+#qrScannerModal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center; /* Centrar contenido vertical y horizontalmente */
+}
+
+/* Contenedor del contenido del modal */
+.modal-content {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 500px; /* Ancho del modal */
+    height: 500px; /* Alto del modal */
+    display: flex;
+    flex-direction: column; /* Para alinear elementos en columna */
+    align-items: center; /* Centrar elementos en el eje horizontal */
+    position: relative; /* Necesario para el posicionamiento absoluto del video */
+}
+
+/* Estilo para el video */
+video {
+    width: 100%; /* Asegúrate de que el video ocupe todo el ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    max-height: 100%; /* Limitar la altura máxima al contenedor */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+/* Estilo para el canvas */
+canvas {
+    display: none; /* Ocultar el canvas inicialmente */
+}
+
+#scan-result {
+    margin-top: 20px; /* Espaciado superior */
+    display: none; /* Ocultar por defecto */
+}
+
+#qr-text {
+    font-size: 16px; /* Tamaño de fuente */
+    margin-right: 10px; /* Espacio a la derecha para el botón de copiar */
+}
+
+/* Estilos del fondo del modal */
+#codigoModal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posicionamiento fijo */
+    z-index: 1; /* Asegurarse de que esté en el frente */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Activar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+}
+
+/* Estilos del contenido del modal */
+.modal-content {
+    background-color: #fefefe; /* Fondo blanco */
+    margin: 15% auto; /* Margen superior e inferior */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #888; /* Borde */
+    width: 80%; /* Ancho del modal */
+    height:auto;
+    max-width: 400px; /* Ancho máximo */
+    position: relative; /* Posicionamiento relativo */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar para centrar */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Estilos de los botones */
+button {
+    margin-top: 10px; /* Espacio superior */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+/* Estilo del botón de confirmar */
+#btn-confirmar {
+    background-color: #28a745; /* Color verde */
+    color: white; /* Texto blanco */
+}
+
+/* Estilo del botón de cancelar */
+button:not(#btn-confirmar) {
+    background-color: #dc3545; /* Color rojo */
+    color: white; /* Texto blanco */
+}
+@media (max-width:800px){
+    
+    .contenedor table thead{
+        font-size: 12px;
+    }
+    .contenedor table tbody{
+        font-size: 12px;
+    }
+    .contenedor{
+        overflow-x: auto;
+    }
+    .contenedor table tbody button{
+        font-size: 10px;
+    }
+}

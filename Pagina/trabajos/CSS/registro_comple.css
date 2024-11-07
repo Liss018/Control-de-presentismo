@@ -1,0 +1,153 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #b31b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 400px;
+    background-color: #a10e0e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-panel {
+    width: 50%;
+    background-color: #1c1b1b;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-panel .logo {
+    margin-bottom: 20px;
+}
+
+.left-panel .logo-img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.left-panel h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.left-panel .registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-panel .libreta {
+    width: 100px;
+    height: 150px;
+    background-color: #b53131;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+
+.left-panel .libreta::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+.left-panel .libreta .frente{
+    width: 100px;
+    height: 130px;
+    margin-top: 20px;
+    background-color: #b53131;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6; /* Siempre encima del papel */
+}
+/* Estilos del papel */
+.left-panel .libreta .papel {
+    width: 80px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: -120px; /* Comienza fuera de la libreta */
+    left: 10px;
+    right: 10px;
+    border-radius: 5px;
+    animation: moverPapel 4s ease-in-out infinite; /* Animación */
+    z-index: 5; /* Por detrás de 'frente' */
+}
+
+/* Animación de entrada y salida del papel */
+@keyframes moverPapel {
+    0% {
+        top: -120px; /* Papel fuera de la libreta (arriba) */
+    }
+    50% {
+        top: 20px; /* Papel dentro de la libreta */
+    }
+    100% {
+        top: -120px; /* Papel vuelve a salir */
+    }
+}
+
+.left-panel .registro h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right-panel {
+    width: 50%;
+    background-color: #d73232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+@media (max-width:800px){
+.container .right-panel{
+    width: 40%;
+}
+.container .left-panel{
+    width: 60%;
+}
+}
+@media (max-width:800px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .container .left-panel{
+        width: 100%;
+    }
+    .container .right-panel{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+    

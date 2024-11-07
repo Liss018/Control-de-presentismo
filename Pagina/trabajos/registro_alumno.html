@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumno</title>
+    <link rel="stylesheet" href="CSS/registro_alum.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <img src="./imagenes/logo_krause.png" alt="Escuela Técnica Otto Krause" class="logo-img">
+                <h3>Escuela Técnica<br>OTTO KRAUSE</h3>
+            </div>
+            <div class="registro">
+                <div class="icono">
+                    <!-- Puedes añadir aquí un ícono de libreta si lo tienes -->
+                </div>
+                <h2>REGISTRO DE ALUMNO</h2>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>Datos</h2>
+            <form action="guardar_registro.php">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+                <input type="text" placeholder="Año" required>
+                <input type="text" placeholder="División" required>
+                <input type="text" placeholder="Especialidad" required>
+                <a href="registro_completo_alumno.html"><button type="submit">INGRESAR</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

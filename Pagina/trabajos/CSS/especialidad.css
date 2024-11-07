@@ -1,0 +1,125 @@
+
+
+/* Estilos para el botón Volver */
+.volver-boton {
+    position: absolute;
+    right: 20px; /* Posiciona el botón a la derecha del header */
+    top: 95px;
+    padding: 10px 20px;
+    background-color: #910505;
+    color: white;
+    border: 2px solid #8b0a0a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-boton:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+
+
+
+h1{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+/* Section estilo actualizado sin grid */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 40px;
+}
+
+.grid-item {
+    text-align: center;
+    width: 250px; /* Ancho de cada elemento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 100px; /* Espacio inferior entre los elementos */
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-size: cover; /* Asegura que la imagen cubra completamente el recuadro */
+    background-position: center; /* Centra la imagen */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Botones con estilo de los labels */
+.btn {
+    background-color: #6b54b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8b0a0a;
+}
+
+
+.especialidad-img {
+    width: 250px; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+@media (max-width: 880px) {
+    .grid-container {
+        justify-content: space-around; /* Ajusta los elementos para que se distribuyan */
+    }
+    .grid-container .grid-item{
+        margin: auto 20px;
+    }
+    .grid-item .box {
+        width: 150px;
+        height: 150px;
+    }
+    .grid-item a {
+        font-size: 18px;
+    }
+    .grid-item .especialidad-img {
+        width: 150px; /* Ajusta el tamaño según necesites */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+    }
+}
+@media (max-width: 500px) {
+    h1{
+        font-size: 20px;
+    }
+    
+    .grid-container .grid-item{
+        margin: auto 10px;
+    }
+    .grid-container .grid-item .box {
+        width: 100px;
+        height: 100px;
+    }
+    .grid-item a {
+        font-size: 12px;
+    }
+    .grid-item .especialidad-img {
+        width: 100px; /* Ajusta el tamaño según necesites */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+    }
+
+
+}

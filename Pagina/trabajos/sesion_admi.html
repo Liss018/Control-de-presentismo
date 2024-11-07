@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia</title>
+    <link rel="stylesheet" href="CSS/registro_admi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <img src="./imagenes/otto_krause.png" alt="Escuela Técnica Otto Krause" class="logo-img">
+                <h3>Escuela Técnica<br>OTTO KRAUSE</h3>
+            </div>
+            <div class="registro">
+                <div class="icono">
+                    
+                </div>
+                <h2>REGISTRO DE ASISTENCIA</h2>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>Datos</h2>
+            <form action="inicio_sesion_admin.php" method="POST">
+                <input type="number" placeholder="Dni" name="dni"  required>
+                <input type="password" placeholder="Contraseña" name="password" required>
+                <button type="submit">INGRESAR</button>
+                
+            </form>
+            <button class="registros"  onclick="window.location.href='registro_admi.html';">Registrarse</button>
+        </div>
+    </div>
+</body>
+</html>

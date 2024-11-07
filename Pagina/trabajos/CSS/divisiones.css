@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: center; /* Centra el contenido en el eje horizontal */
+    align-items: center;     /* Centra el contenido en el eje vertical */
+    background-color: #8b0a0a;
+    padding: 10px 20px;
+    position: relative;  /* Permite posicionar elementos dentro del header */
+    height: 80px; /* Asegura una altura mínima adecuada */
+}
+
+.logo {
+    position: absolute;
+    left: 0;  /* Fija el logo a la izquierda */
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width:200px;
+    height: 80px;
+    border-radius: 5%;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px; /* Espacio entre los enlaces del menú */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el botón Volver */
+.volver-botom {
+    position: absolute;
+    right: 20px; /* Posiciona el botón a la derecha del header */
+    top: 95px;
+    padding: 10px 20px;
+    background-color: #910505;
+    color: white;
+    border: 2px solid #8b0a0a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-botom:hover {
+    background-color: white;
+    color: #fff;
+}
+
+/* Contenedor central */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+    height: 60%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-style: none;
+    font-size: 50px;
+    color: aliceblue;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    left: 43%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    flex-grow: 1; /* Asegura que el grid ocupe el espacio necesario */
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-size: cover; /* Asegura que la imagen cubra completamente el recuadro */
+    background-position: center; /* Centra la imagen */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#box7 {
+    background-image: url('/imagenes/libreta.png');
+}
+
+/* Botones con estilo de los labels */
+.btn {
+    background-color: #6b54b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8b0a0a;
+}
+/* Pie de página */
+footer {
+    background-color: #8b0a0a;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 10px;
+    margin-right: 5px;
+}
+.footer-logo {
+    width: 35px;
+    height: 35px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+h3{
+    font-size: 20px;
+}
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #ddd;
+}
+
+.icon-twitter {
+    width: 45px;
+    height: 40px;
+}
+
+.icon-facebook {
+    width: 40px;
+    height: 40px;
+}
